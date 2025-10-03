@@ -1,0 +1,13 @@
+.image {
+    background-image: url(../../assets/cr7.jpg);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    
+    background-position: center;  /* centraliza a imagem */
+    background-repeat: no-repeat; /* evita repetir a imagem */
+    background-size: cover;       /* faz a imagem preencher todo o círculo */
+
+    margin-left: 30px;
+    margin-top: 3px;
+}

@@ -6,6 +6,7 @@ import Wrapper from './components/wrapper/Wrapper.jsx'
 import Header from './components/header/Header.jsx'
 import QuickAccessItem from './components/quickaccessitem/QuickAccessItem.jsx'
 import QuickAccess from './components/quickaccess/QuickAccess.jsx'
+import Area2 from './components/area2/Area.jsx'
 
 import house from "./assets/house.svg"
 import people from "./assets/people.svg"
@@ -24,9 +25,8 @@ createRoot(document.getElementById('root')).render(
         <QuickAccessItem icone={video}/>
         <QuickAccessItem icone={notif}/>
         <QuickAccessItem icone={chat}/>
-
       </QuickAccess>
-      <p>Area de postar - inclui foto de perfil, input para escrever a postagem icone/btn para postar foto</p>
+      <Area2 />
       <p>Storys</p>
       <p>feed</p>
     </Wrapper>

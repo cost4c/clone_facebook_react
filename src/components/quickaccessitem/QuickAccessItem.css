@@ -1,3 +1,33 @@
-p {
-    color: pink;
+/* Estilo de cada item da barra de acesso rápido */
+.quick-access-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;               /* cada item ocupa espaço igual, ajuda a distribuir ponta a ponta */
+  height: 55px;          /* altura padrão do botão */
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+/* Efeito hover igual ao Facebook */
+.quick-access-item:hover {
+  background: #f0f2f5;
+}
+
+/* Ícone dentro do item */
+.qa-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+/* Estado ativo (ícone selecionado) */
+.quick-access-item.active {
+  border-bottom: 3px solid #0866ff;  /* linha azul embaixo */
+}
+
+.quick-access-item.active .qa-icon {
+  /* deixa o ícone azul igual ao Facebook */
+  filter: invert(33%) sepia(95%) saturate(2875%) hue-rotate(206deg) brightness(97%) contrast(101%);
 }
